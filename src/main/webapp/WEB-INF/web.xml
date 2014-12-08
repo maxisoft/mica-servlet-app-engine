@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE web-app PUBLIC
+ "-//Oracle Corporation//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+    <servlet>
+        <servlet-name>ListDocuments</servlet-name>
+        <servlet-class>myapp.ListDocuments</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Documents</servlet-name>
+        <servlet-class>myapp.Documents</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListDocuments</servlet-name>
+        <url-pattern>/documents</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Documents</servlet-name>
+        <url-pattern>/documents/*</url-pattern>
+    </servlet-mapping>
+</web-app>
